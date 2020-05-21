@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a9dca503-3126-4656-ac3f-dff5555b2a59" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1WeGcG9tC2XvHXRgLm1DEWNFOr1" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/api/templates/first_app" />
+    <property name="settings.editor.selected.configurable" value="project.propDebugger" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Bipin Gowda\PycharmProjects\GodsEye\api\templates\first_app" />
+      <recent name="C:\Users\Bipin Gowda\PycharmProjects\GodsEye\api\api\static\images" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Bipin Gowda\PycharmProjects\GodsEye\api\static\css" />
+      <recent name="C:\Users\Bipin Gowda\PycharmProjects\GodsEye\api\media\output" />
+      <recent name="C:\Users\Bipin Gowda\PycharmProjects\GodsEye\api\media\videos" />
+      <recent name="C:\Users\Bipin Gowda\PycharmProjects\GodsEye\api\" />
+      <recent name="C:\Users\Bipin Gowda\PycharmProjects\GodsEye\api" />
+    </key>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a9dca503-3126-4656-ac3f-dff5555b2a59" name="Default Changelist" comment="" />
+      <created>1579502724326</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1579502724326</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="391" y="151" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1587128459308">
+      <screen x="0" y="0" width="1280" height="683" />
+    </state>
+    <state x="391" y="151" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.683@0.0.1280.683" timestamp="1587128459308" />
+    <state x="421" y="99" key="FileChooserDialogImpl" timestamp="1586851386638">
+      <screen x="0" y="0" width="1280" height="683" />
+    </state>
+    <state x="421" y="99" key="FileChooserDialogImpl/0.0.1280.683@0.0.1280.683" timestamp="1586851386638" />
+    <state x="144" y="0" key="SettingsEditor" timestamp="1589544844265">
+      <screen x="0" y="0" width="1280" height="683" />
+    </state>
+    <state x="144" y="0" key="SettingsEditor/0.0.1280.683@0.0.1280.683" timestamp="1589544844265" />
+    <state x="349" y="168" key="com.intellij.ide.util.TipDialog" timestamp="1590068941258">
+      <screen x="0" y="0" width="1280" height="683" />
+    </state>
+    <state x="349" y="168" key="com.intellij.ide.util.TipDialog/0.0.1280.683@0.0.1280.683" timestamp="1590068941258" />
+    <state x="452" y="260" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589646582218">
+      <screen x="0" y="0" width="1280" height="683" />
+    </state>
+    <state x="452" y="260" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.683@0.0.1280.683" timestamp="1589646582218" />
+    <state x="303" y="3" width="672" height="678" key="search.everywhere.popup" timestamp="1590002881922">
+      <screen x="0" y="0" width="1280" height="683" />
+    </state>
+    <state x="303" y="3" width="672" height="678" key="search.everywhere.popup/0.0.1280.683@0.0.1280.683" timestamp="1590002881922" />
+  </component>
+</project>

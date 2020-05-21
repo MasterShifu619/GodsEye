@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Preview</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/mystyle.css' %}"/>
+    <link rel="icon" type="image/png" href="{% static 'images/drone.png' %}">
+</head>
+<body style="background-color:black">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="/">Gods Eye</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/first_app/about/">About us</a>
+      </li>
+
+    </ul>
+    <a href="/admin/"><img src="{% static 'images/user.png' %}" height="35px" width="35px"></a>
+    </div>
+  </nav>
+<br>
+<h1 style="color:darkslategrey"><center>Video Preview</center></h1>
+<br>
+<hr>
+<br>
+<br>
+
+<!--      {% if list_videos %}-->
+<!--      {% for video in list_videos %}-->
+<!--      {{ video.name }}-->
+<!--      {{ video.videofile }}-->
+<!--      {% endfor %}-->
+<!--      {% else %}-->
+<!--      nothing-->
+<!--      {% endif %}-->
+  <center>
+
+<!--  <div class="form-group">-->
+<!--    <label for="exampleFormControlSelect1">Select any video to preview:</label>&nbsp;&nbsp;-->
+<!--    <select class="form-control" id="exampleFormControlSelect1" style="display:inline; width:15%">-->
+<!--      {% if list_videos %}-->
+<!--      {% for video in list_videos %}-->
+<!--      <option value="{{ video.videofile }}">{{ video.name }}</option>-->
+<!--      {% endfor %}-->
+<!--      {% else %}-->
+<!--      <option>No uploads yet</option>-->
+<!--      {% endif %}-->
+<!--    </select>-->
+<!--  </div>-->
+    <form method="POST" enctype="multipart/form-data">
+      {% csrf_token %}
+      <select name="ch" id="ch">
+
+        {% for i in list_videos %}
+
+        <option>{{i}}</option>
+        {% endfor %}
+      </select><br><br>
+      <input class="btn btn-secondary" type="submit" value="Preview"/>
+    </form>
+  <br><br>
+  </center>
+  <center>
+    {% if videofile %}
+    <div id="disp_video">
+    <video width='400' controls>
+        <source src='{{ videofile }}' type='video/mp4'>
+        Your browser does not support the video tag.
+    </video>
+<br><br>
+      {% endif %}
+</div></center>
+
+
+
+<!--  <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>-->
+<!--  <a href="#" class="list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true">Vestibulum at eros</a>-->
+
+<!--<img src="{% static 'images/geye.jpg' %}" alt="uh, oh">-->
+</body>
+</html>

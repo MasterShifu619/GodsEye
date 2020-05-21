@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About us</title>
+<!--    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/styles-merged.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/mystyle.css' %}"/>
+    <link rel="icon" type="image/png" href="{% static 'images/drone.png' %}">
+</head>
+<body style="background-color:black">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="/">Gods Eye</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="/">Home </a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="first_app/about">About us</a>
+      </li>
+
+    </ul>
+    <a href="/admin/"><img src="{% static 'images/user.png' %}" height="35px" width="35px"></a>
+    </div>
+  </nav>
+    <br>
+    <section class="probootstrap-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 section-heading probootstrap-animate">
+          <h1 style="color:whitesmoke">The Team</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 probootstrap-animate">
+          <div class="probootstrap-card probootstrap-person text-center">
+            <div class="probootstrap-card-media">
+              <img src="{% static 'images/Bipin.jpg' %}" class="img-responsive" alt="Bipin">
+            </div>
+            <div class="probootstrap-card-text">
+              <h2 class="probootstrap-card-heading mb0">Bipin V Gowda</h2>
+              <p><small>Machine Learning Enthusiast</small></p>
+              <p>I am an industrious student capable of adapting quickly to any environment
+and have a firm belief that technical skills coupled with moral ethics and
+values make a complete individual.</p>
+              <ul class="probootstrap-social">
+                <li><a href="https://www.facebook.com/bipin.gowda.5"><img src="{% static 'images/facebook.png' %}" style="height:30px; width:30px" ></img></a></li>
+                <li><a href="https://www.instagram.com/p/BCDyc8WS4J7QR6XNdtvA_Sh2lPHSFwkDWIeq3E0/"><img src="{% static 'images/instagram.png' %}"  style="height:30px; width:30px" ></img></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 probootstrap-animate">
+          <div class="probootstrap-card probootstrap-person text-center">
+            <div class="probootstrap-card-media">
+              <img src="{% static 'images/Abhishek.jpeg' %}" class="img-responsive" alt="Abhishek">
+            </div>
+            <div class="probootstrap-card-text">
+              <h2 class="probootstrap-card-heading mb0">Abhishek J</h2>
+              <p><small>Classifier and Data specialist</small></p>
+              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+              <ul class="probootstrap-social">
+                <li><a href="https://www.facebook.com/Abhishek.jagadish"><img src="{% static 'images/facebook.png' %}" style="height:30px; width:30px" ></img></a></li>
+                <li><a href="https://www.instagram.com/abhishek.jagadish/?hl=en"><img src="{% static 'images/instagram.png' %}"  style="height:30px; width:30px" ></img></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 probootstrap-animate">
+          <div class="probootstrap-card probootstrap-person text-center">
+            <div class="probootstrap-card-media">
+              <img src="{% static 'images/Jairaj.jpeg' %}" class="img-responsive" alt="Jairaj">
+            </div>
+            <div class="probootstrap-card-text">
+              <h2 class="probootstrap-card-heading mb0">Jairaj P</h2>
+              <p><small>Image Classification Expert</small></p>
+              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+              <ul class="probootstrap-social">
+                <li><a href="https://www.facebook.com/Jairaj.Pisupati"><img src="{% static 'images/facebook.png' %}" style="height:30px; width:30px" ></img></a></li>
+                <li><a href="https://www.instagram.com/pisuparty/?hl=en"><img src="{% static 'images/instagram.png' %}"  style="height:30px; width:30px" ></img></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 probootstrap-animate" style="margin-left:381px">
+          <div class="probootstrap-card probootstrap-person text-center">
+            <div class="probootstrap-card-media">
+              <img src="{% static 'images/Nikhil.jpeg' %}" class="img-responsive" alt="Nikhil">
+            </div>
+            <div class="probootstrap-card-text">
+              <h2 class="probootstrap-card-heading mb0">Nikhil H Y</h2>
+              <p><small>Documentation Expert</small></p>
+              <p>I am a passionate computer science student with a deep desire to learn about new programming languages and how they can be applied  in solving problems with a social and economic impact.</p>
+              <ul class="probootstrap-social">
+                <li><img src="{% static 'images/facebook.png' %}" style="height:30px; width:30px" ></img></li>
+                <li><a href="https://www.instagram.com/nikhil__hy/?hl=en"><img src="{% static 'images/instagram.png' %}"  style="height:30px; width:30px" ></img></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="probootstrap-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 section-heading probootstrap-animate">
+          <h1 style="color:whitesmoke">Special Thanks To </h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 probootstrap-animate">
+          <div class="probootstrap-card probootstrap-person text-center">
+            <div class="probootstrap-card-media">
+              <img src="{% static 'images/JJ.jpg' %}" class="img-responsive" alt="Bipin">
+            </div>
+            <div class="probootstrap-card-text">
+              <h2 class="probootstrap-card-heading mb0">Smt. Jebah Jayakumar</h2>
+              <p><small>Assistant Professor </small></p>
+              <p>BNMIT</p>
+              <ul class="probootstrap-social">
+                <li><a href=""><img src="{% static 'images/facebook.png' %}" style="height:30px; width:30px" ></img></a></li>
+                <li><a href=""><img src="{% static 'images/instagram.png' %}"  style="height:30px; width:30px" ></img></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 probootstrap-animate" style="margin-left:380px">
+          <div class="probootstrap-card probootstrap-person text-center">
+            <div class="probootstrap-card-media">
+              <img src="{% static 'images/Akshay.jpg' %}" class="img-responsive" alt="Abhishek">
+            </div>
+            <div class="probootstrap-card-text">
+              <h2 class="probootstrap-card-heading mb0">Akshay Pai</h2>
+              <p><small>Machine Learning Developer | Tech Writer at sourcedexter.com</small></p>
+              <p>ThoughtClan Technologies</p>
+              <ul class="probootstrap-social">
+                <li><a href=""><img src="{% static 'images/facebook.png' %}" style="height:30px; width:30px" ></img></a></li>
+                <li><a href=""><img src="{% static 'images/instagram.png' %}"  style="height:30px; width:30px" ></img></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <script src="{% static 'js/scripts.min.js' %}"></script>
+  <script src="{% static 'js/main.min.js' %}"></script>
+  <script src="{% static 'js/custom.js' %}"></script>
+
+</body>
+</html>

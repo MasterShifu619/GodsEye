@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Video uploader</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/mystyle.css' %}"/>
+    <link rel="icon" type="image/png" href="{% static 'images/drone.png' %}">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="/">Gods Eye</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="/first_app/about/">About us</a>
+      </li>
+
+    </ul>
+    <a href="/admin/"><img src="{% static 'images/user.png' %}" height="35px" width="35px"></a>
+    </div>
+</nav>
+<br>
+<h1 style="color:darkslategrey"><center>Video Uploader</center></h1>
+<br>
+<hr>
+<br>
+<br>
+<center>
+    <form enctype="multipart/form-data" method="POST" action="">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Upload" onClick="window.location.reload()";/>
+</form>
+    {% if file_exists != 'false'%}
+    <br>
+    <font color="red">{{ file_exists }}</font>
+    {% endif %}
+</center>
+<br>
+<br>
+<hr>
+
+<br>
+<br>
+<center><div id="disp_video">
+    <h2>Preview your latest upload below!</h2><br>
+    <video width='400' controls>
+        <source src='{{ MEDIA_URL }}{{ videofile }}' type='video/mp4'>
+        Your browser does not support the video tag.
+    </video>
+<br><br>
+</div></center>
+
+
+</body>
+<script>
+    'undefined'=== typeof _trfq || (window._trfq = []);'undefined'=== typeof _trfd && (window._trfd=[]),_trfd.push({'tccl.baseHost':'secureserver.net'}),_trfd.push({'ap':'cpsh'},{'server':'p3plcpnl0769'}) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.
+</script>
+<script src='https://img1.wsimg.com/tcc/tcc_l.combined.1.0.6.min.js'></script>
+<script>
+    'undefined'=== typeof _trfq || (window._trfq = []);'undefined'=== typeof _trfd && (window._trfd=[]),_trfd.push({'tccl.baseHost':'secureserver.net'}),_trfd.push({'ap':'cpsh'},{'server':'p3plcpnl0769'}) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.
+</script>
+<script src='https://img1.wsimg.com/tcc/tcc_l.combined.1.0.6.min.js'>
+
+</script>
+</html>

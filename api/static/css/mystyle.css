@@ -1,0 +1,43 @@
+body{
+    background:black;
+}
+
+form{
+    color:white
+}
+#disp_video{
+    color:white
+}
+hr{
+    background:white;
+}
+
+h1{
+    color:darkslategray;
+    font-size:40px;
+
+}
+.list-group{
+    font-family:-apple-system;
+    font-size:20px;
+
+}
+
+.list-group a{
+    background: teal;
+    color:white;
+}
+
+.item{
+    width: 30px;
+}
+
+p{
+    color: white;
+}
+
+@media (min-width: 768px) {
+.navbar-collapse.collapse {
+display: inline;
+}
+}

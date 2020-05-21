@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>God's Eye</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/mystyle.css' %}"/>
+    <link rel="icon" type="image/png" href="{% static 'images/drone.png' %}">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Gods Eye</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="first_app/about">About us</a>
+      </li>
+      </ul>
+      <a href="admin/"><img src="{% static 'images/user.png' %}" height="35px" width="35px"></a>
+    </div>
+  </nav>
+  <br>
+  <div class="container">
+    <div class="jumbotron" style="height: 120px;background-color:honeydew;padding-top: 0px;margin-bottom:0px;">
+      <center><img src="{% static 'images/God\'s eye22.jpg' %}" height="120px" width="300px">
+<!--        A video surveillance system that primarily uses machine learning and deep learning algorithms to identify violent people among a group of people based on posture.-->
+      </center>
+    </div>
+
+    <marquee behavior="alternate"><img src="{% static 'images/dron1.jpg' %}" height="200px" width="390px"></marquee>
+    <div class="container">
+  <center><div class="list-group" style="width:360px">
+  <a href="/first_app/upload_video" class="list-group-item list-group-item-action">
+    Upload a video
+  </a>
+  <a href="/first_app/preview_video" class="list-group-item list-group-item-action">Preview any video</a>
+  <a href="/first_app/generate_output" class="list-group-item list-group-item-action">Generate Output</a>
+
+  </div></center>
+    <br>
+    <br>
+    <br>
+  </div>
+  </div>
+</body>
+</html>
