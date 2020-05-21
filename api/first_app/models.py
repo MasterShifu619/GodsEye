@@ -7,6 +7,7 @@ class Video(models.Model):
     def __str__(self):
         return self.name + ": " + str(self.videofile)
 #shows video information
+#testing auto git push
 class Video_info(models.Model):
     name = models.CharField(max_length=500)
     ifps = models.IntegerField(default=25)
