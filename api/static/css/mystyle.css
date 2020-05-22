@@ -41,3 +41,8 @@ p{
 display: inline;
 }
 }
+
+.output_head{
+    color: cadetblue;
+    font-family: Bookman Old Style;
+}

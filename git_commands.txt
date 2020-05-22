@@ -1,0 +1,9 @@
+git commands:
+before starting:
+always pull first to get updates from others:
+"git pull origin master"
+
+after making updates:
+Git add .
+git commit -m "some message"
+git push origin master

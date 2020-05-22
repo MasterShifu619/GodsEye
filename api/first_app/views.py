@@ -87,8 +87,10 @@ def Vout(request):
                 ifp,nop=alpha(file_name,f)
                 end = time.time()
                 t=end-start
-                temp_path='C:/Users/Bipin Gowda/PycharmProjects/GodsEye/api/media/output_frames/'+ffname + '-frame_' + str(f)+'_1.jpg'
-                if os.path.exists(temp_path):
+                #temp_path='C:/Users/Bipin Gowda/PycharmProjects/GodsEye/api/media/output_frames/'+ffname + '-frame_' + str(f)+'_1.jpg'
+                file_list1 = os.listdir('C:/Users/Bipin Gowda/PycharmProjects/GodsEye/api/media/output_frames')
+                o1=[fn for fn in file_list1 if ffname+'-frame_'+str(f) in fn]
+                if len(o1)>0:
                     av='Yes'
                 else:
                     av='No'
@@ -105,13 +107,14 @@ def Vout(request):
                 new_name = file_name + '(' + str(f) + ')'
                 temp=Video_info.objects.filter(name=new_name)
                 for i in temp:
-                    context['vname'] = name
+                    context['vname'] = i.name
                     context['ifps'] = i.ifps
                     context['ofps'] = f
-                    context['nop'] = i.nop
-                    context['av'] = i.av
-                    context['tt'] = i.tt
+                    context['nop'] = i.no_of_people
+                    context['av'] = i.any_violence
+                    context['tt'] = i.time_taken
             context['videofile']='/media/output/' + ffname + '_Output_' + str(f) + '.mp4'
+            print(context)
             #'videofile': 'file:///C:/Users/Bipin Gowda/PycharmProjects/GodsEye/output/' + ffname + '_Output.mp4'
 
     return render(request,"first_app/output.html",context)

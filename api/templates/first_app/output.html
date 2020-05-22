@@ -5,10 +5,9 @@
 <head>
   <meta charset="UTF-8">
   <title>Output</title>
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="{% static 'css/mystyle.css' %}"/>
-    <link rel="icon" type="image/png" href="{% static 'images/drone.png' %}">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="{% static 'css/mystyle.css' %}"/>
+  <link rel="icon" type="image/png" href="{% static 'images/drone.png' %}">
 </head>
 <body style="background-color:black">
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -17,47 +16,22 @@
       <span class="navbar-toggler-icon"></span>
     </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+       <li class="nav-item">
         <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
+       </li>
+       <li class="nav-item">
         <a class="nav-link" href="/first_app/about/">About us</a>
-      </li>
-    </ul>
-    <a href="/admin/"><img src="{% static 'images/user.png' %}" height="35px" width="35px"></a>
+       </li>
+      </ul>
+      <a href="/admin/"><img src="{% static 'images/user.png' %}" height="35px" width="35px"></a>
     </div>
   </nav>
-<br>
-<h1 style="color:darkslategrey"><center>Output</center></h1>
-<br>
-<hr>
-<br>
-<br>
-
-<!--      {% if list_videos %}-->
-<!--      {% for video in list_videos %}-->
-<!--      {{ video.name }}-->
-<!--      {{ video.videofile }}-->
-<!--      {% endfor %}-->
-<!--      {% else %}-->
-<!--      nothing-->
-<!--      {% endif %}-->
+  <br>
+  <h1 style="color:darkslategrey"><center>Output</center></h1>
+  <br><hr><br><br>
   <center>
-
-<!--  <div class="form-group">-->
-<!--    <label for="exampleFormControlSelect1">Select any video to preview:</label>&nbsp;&nbsp;-->
-<!--    <select class="form-control" id="exampleFormControlSelect1" style="display:inline; width:15%">-->
-<!--      {% if list_videos %}-->
-<!--      {% for video in list_videos %}-->
-<!--      <option value="{{ video.videofile }}">{{ video.name }}</option>-->
-<!--      {% endfor %}-->
-<!--      {% else %}-->
-<!--      <option>No uploads yet</option>-->
-<!--      {% endif %}-->
-<!--    </select>-->
-<!--  </div>-->
     <form method="POST" enctype="multipart/form-data">
       {% csrf_token %}
       {{ form.as_p }}
@@ -70,20 +44,44 @@
     <br>
     <hr>
     <br>
-    <div id="disp_video" style="display:inline; margin-left:430px; height:300px; width:400px">
-        <video width='400' controls>
+  <div class="card mb-2" style="max-width: 1000px; background-color:black; margin-left: 150px">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card-body">
+        <h5 class="card-title" style="color:white"><span class="output_head">Name:</span> {{vname}}</h5>
+        <p class="card-text"><span class="output_head">Original FPS:</span> {{ifps}}</p>
+        <p class="card-text"><span class="output_head">Requested FPS:</span> {{ofps}}</p>
+        <p class="card-text"><span class="output_head">People Identified:</span> {{nop}}</p>
+        <p class="card-text"><span class="output_head">Time Taken:</span> {{tt}} secs</p>
+        <p class="card-text"><span class="output_head">Was there any violent activity?</span>
+          {% if av == "Yes" %}
+          <font color="Red">
+            {{ av }}
+            <br><br>
+          </font>
+            Click below to view only violent individuals
+          <br><br>
+             <a href="/first_app/photogrid/?name={{ name }}"><button class="btn btn-danger" type="button" >Images</button></a>
+          {% endif %}
+          {% if av == "No" %}
+          <font color="Green">
+            {{ av }}
+            <br>
+          </font>
+        {% endif %}
+        </p>
+     </div>
+    </div>
+    <div class="col-md-6">
+      <video width='400' controls>
         <source src='{{ videofile }}' type='video/mp4'>
         Your browser does not support the video tag.
         </video>
     </div>
-      <div style="display:inline; height:400px; width:400px;padding-left:150px">
-        <a href="/first_app/photogrid/?name={{ name }}"><button class="btn btn-success" type="button" >Violent Individuals!</button></a>
-      </div>
-      {% endif %}
-<br><br>
-<!--  <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>-->
-<!--  <a href="#" class="list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true">Vestibulum at eros</a>-->
+  </div>
+</div>
+  {% endif %}
 
-<!--<img src="{% static 'images/geye.jpg' %}" alt="uh, oh">-->
+<br><br>
 </body>
 </html>
