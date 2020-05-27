@@ -6,96 +6,22 @@
       <change beforePath="$PROJECT_DIR$/api/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/api/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/first_app/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/first_app/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/first_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/first_app/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/media/output/Atm_Attack_1_Output_1.mp4" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/api/media/output/Thumbs.db" beforeDir="false" afterPath="$PROJECT_DIR$/api/media/output/Thumbs.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/media/output/V_6_Output_1.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/media/output/V_6_Output_3.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/media/output/V_6_Output_4.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/media/output/V_6_Output_5.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/media/output_frames/Atm_Attack_1-frame_1_5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/media/output_frames/Atm_Attack_1-frame_1_6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/media/output_frames/Atm_Attack_1-frame_1_8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/media/output_frames/JP_NV1-frame_4_9.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/api/media/output_frames/Thumbs.db" beforeDir="false" afterPath="$PROJECT_DIR$/api/media/output_frames/Thumbs.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/media/output_frames/V_6-frame_1_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/media/output_frames/V_6-frame_1_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/media/output_frames/V_6-frame_1_3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/media/output_frames/V_6-frame_1_4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/media/output_frames/V_6-frame_1_5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/media/output_frames/V_6-frame_1_6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/media/output_frames/V_6-frame_1_7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/media/output_frames/V_6-frame_3_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/media/output_frames/V_6-frame_3_10.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/media/output_frames/V_6-frame_3_11.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/media/output_frames/V_6-frame_3_12.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/media/output_frames/V_6-frame_3_13.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/media/output_frames/V_6-frame_3_14.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/media/output_frames/V_6-frame_3_15.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/media/output_frames/V_6-frame_3_16.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/media/output_frames/V_6-frame_3_17.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/media/output_frames/V_6-frame_3_18.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/media/output_frames/V_6-frame_3_3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/media/output_frames/V_6-frame_3_4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/media/output_frames/V_6-frame_3_5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/media/output_frames/V_6-frame_3_6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/media/output_frames/V_6-frame_3_7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/media/output_frames/V_6-frame_3_8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/media/output_frames/V_6-frame_3_9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/media/output_frames/V_6-frame_4_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/media/output_frames/V_6-frame_4_10.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/media/output_frames/V_6-frame_4_11.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/media/output_frames/V_6-frame_4_12.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/media/output_frames/V_6-frame_4_13.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/media/output_frames/V_6-frame_4_14.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/media/output_frames/V_6-frame_4_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/media/output_frames/V_6-frame_4_20.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/media/output_frames/V_6-frame_4_22.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/media/output_frames/V_6-frame_4_23.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/media/output_frames/V_6-frame_4_24.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/media/output_frames/V_6-frame_4_25.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/media/output_frames/V_6-frame_4_26.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/media/output_frames/V_6-frame_4_3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/media/output_frames/V_6-frame_4_4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/media/output_frames/V_6-frame_4_5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/media/output_frames/V_6-frame_4_6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/media/output_frames/V_6-frame_4_7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/media/output_frames/V_6-frame_4_8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/media/output_frames/V_6-frame_4_9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/media/output_frames/V_6-frame_5_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/media/output_frames/V_6-frame_5_10.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/media/output_frames/V_6-frame_5_11.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/media/output_frames/V_6-frame_5_12.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/media/output_frames/V_6-frame_5_13.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/media/output_frames/V_6-frame_5_14.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/media/output_frames/V_6-frame_5_15.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/media/output_frames/V_6-frame_5_16.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/media/output_frames/V_6-frame_5_17.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/media/output_frames/V_6-frame_5_18.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/media/output_frames/V_6-frame_5_19.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/media/output_frames/V_6-frame_5_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/media/output_frames/V_6-frame_5_20.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/media/output_frames/V_6-frame_5_21.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/media/output_frames/V_6-frame_5_22.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/media/output_frames/V_6-frame_5_23.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/media/output_frames/V_6-frame_5_24.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/media/output_frames/V_6-frame_5_25.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/media/output_frames/V_6-frame_5_26.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/media/output_frames/V_6-frame_5_27.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/media/output_frames/V_6-frame_5_28.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/media/output_frames/V_6-frame_5_29.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/media/output_frames/V_6-frame_5_3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/media/output_frames/V_6-frame_5_30.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/media/output_frames/V_6-frame_5_31.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/media/output_frames/V_6-frame_5_4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/media/output_frames/V_6-frame_5_5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/media/output_frames/V_6-frame_5_6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/media/output_frames/V_6-frame_5_7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/media/output_frames/V_6-frame_5_8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/media/output_frames/V_6-frame_5_9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/media/videos/Thumbs.db" beforeDir="false" afterPath="$PROJECT_DIR$/api/media/videos/Thumbs.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/static/css/mystyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/api/static/css/mystyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/templates/first_app/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/api/templates/first_app/about.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/templates/first_app/output.html" beforeDir="false" afterPath="$PROJECT_DIR$/api/templates/first_app/output.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/templates/first_app/preview.html" beforeDir="false" afterPath="$PROJECT_DIR$/api/templates/first_app/preview.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extracted_frames/Thumbs.db" beforeDir="false" afterPath="$PROJECT_DIR$/extracted_frames/Thumbs.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frames/Thumbs.db" beforeDir="false" afterPath="$PROJECT_DIR$/frames/Thumbs.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model2.h5" beforeDir="false" afterPath="$PROJECT_DIR$/model2.h5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/multipose.py" beforeDir="false" afterPath="$PROJECT_DIR$/multipose.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/output/Thumbs.db" beforeDir="false" afterPath="$PROJECT_DIR$/output/Thumbs.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rfc_model.sav" beforeDir="false" afterPath="$PROJECT_DIR$/rfc_model.sav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/svm_model.sav" beforeDir="false" afterPath="$PROJECT_DIR$/svm_model.sav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trained_vectors.csv" beforeDir="false" afterPath="$PROJECT_DIR$/trained_vectors.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/training.csv" beforeDir="false" afterPath="$PROJECT_DIR$/training.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/videos/NV_60.mp4" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/videos/Thumbs.db" beforeDir="false" afterPath="$PROJECT_DIR$/videos/Thumbs.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -196,10 +122,10 @@
       <screen x="0" y="0" width="1280" height="683" />
     </state>
     <state x="144" y="0" key="SettingsEditor/0.0.1280.683@0.0.1280.683" timestamp="1589544844265" />
-    <state x="349" y="168" key="com.intellij.ide.util.TipDialog" timestamp="1590162449965">
+    <state x="349" y="168" key="com.intellij.ide.util.TipDialog" timestamp="1590567069822">
       <screen x="0" y="0" width="1280" height="683" />
     </state>
-    <state x="349" y="168" key="com.intellij.ide.util.TipDialog/0.0.1280.683@0.0.1280.683" timestamp="1590162449965" />
+    <state x="349" y="168" key="com.intellij.ide.util.TipDialog/0.0.1280.683@0.0.1280.683" timestamp="1590567069822" />
     <state x="452" y="260" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1590073945751">
       <screen x="0" y="0" width="1280" height="683" />
     </state>

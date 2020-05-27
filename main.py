@@ -19,7 +19,7 @@ def apply_yolo(fname,frame,writer):
     print('Time taken:',(end-start))
 
 # Opens the Video file
-video_name='Shop_Attack_1.mp4'
+video_name='NV_42.mp4'
 cap = cv2.VideoCapture('videos/'+video_name)
 
 #Find FPS
@@ -31,6 +31,8 @@ else:
     fps = int(cap.get(cv2.CAP_PROP_FPS))
     print("Frames per second using video.get(cv2.CAP_PROP_FPS) : {0}".format(fps))
 
+frame_count = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
+print(frame_count)
 i=0
 j=0
 final_fps=4
@@ -66,10 +68,14 @@ with open('training.csv', 'a', newline='') as file:
             block += 1
         ret, frame = cap.read()
         if ret == False:
-            break
+            if i<frame_count:
+                print("Broken frame identified and ignored")
+                continue
+            else:
+                break
         fname = v + '-frame' + str(i) + '.jpg'
         if i in selected_frames:
-            cv2.imwrite('extracted_frames/' + fname, frame)
+            #cv2.imwrite('extracted_frames/' + fname, frame)
             j += 1
             apply_yolo(fname, frame,writer)
             print(j, selected_frames)

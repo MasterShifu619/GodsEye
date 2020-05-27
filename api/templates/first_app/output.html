@@ -34,6 +34,15 @@
   <center>
     <form method="POST" enctype="multipart/form-data">
       {% csrf_token %}
+            <label for="name">Name:</label>
+      <select name="name" id="name">
+
+        {% for i in list_videos %}
+
+        <option>{{i}}</option>
+        {% endfor %}
+      </select>
+        <br><br>
       {{ form.as_p }}
       <input class="btn btn-success" type="submit" value="Generate"/>
     </form>

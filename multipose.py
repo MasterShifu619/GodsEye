@@ -246,5 +246,5 @@ def apply_pose_estimate(image1,net,fname,writer):
         j=(j+1)%8
 
     #cv2.imshow("Detected Pose" , frameClone)
-    cv2.imwrite('extracted_frames/'+fname,frameClone)
+    cv2.imwrite('frames/'+fname,frameClone)
     cv2.waitKey(0)

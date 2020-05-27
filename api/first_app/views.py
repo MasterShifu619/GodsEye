@@ -58,18 +58,26 @@ def about(request):
     return render(request, "first_app/about.html", context)
 
 def Vout(request):
-    #videos = Video.objects.order_by('name')
+    videos = Video.objects.order_by('name')
+    list_videos = []
+    for v in videos:
+        list_videos.append(v.name)
     context={}
     form1 = vgen()
     context = { 'form': form1,
+                'list_videos': list_videos,
             }
     if request.POST:
         form1 = vgen(request.POST)
         if form1.is_valid():
-            name=form1.cleaned_data['name']
+            name=request.POST.get('name')
             f = form1.cleaned_data['fps']
-            path=name.split('/')
-            file_name=path[2]
+            temp = Video.objects.filter(name=name)
+            for v in temp:
+                pv = str(v.videofile)
+            print(pv)
+            path=pv.split('/')
+            file_name=path[1]
             fname=file_name.split('.')
             ffname=fname[0]
             import sys

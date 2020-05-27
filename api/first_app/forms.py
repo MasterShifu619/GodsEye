@@ -11,5 +11,5 @@ class vpreview(forms.Form):
     name=forms.CharField()
 
 class vgen(forms.Form):
-    name=forms.FilePathField( path='media/videos/')
+    #name=forms.FilePathField( path='media/videos/',match='.*mp4$')
     fps=forms.IntegerField(widget=NumberInput(attrs={'type':'range', 'step': '1','min':'1', 'max': '10', 'value': '4'}))

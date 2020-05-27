@@ -37,30 +37,10 @@
 <br>
 <br>
 
-<!--      {% if list_videos %}-->
-<!--      {% for video in list_videos %}-->
-<!--      {{ video.name }}-->
-<!--      {{ video.videofile }}-->
-<!--      {% endfor %}-->
-<!--      {% else %}-->
-<!--      nothing-->
-<!--      {% endif %}-->
   <center>
-
-<!--  <div class="form-group">-->
-<!--    <label for="exampleFormControlSelect1">Select any video to preview:</label>&nbsp;&nbsp;-->
-<!--    <select class="form-control" id="exampleFormControlSelect1" style="display:inline; width:15%">-->
-<!--      {% if list_videos %}-->
-<!--      {% for video in list_videos %}-->
-<!--      <option value="{{ video.videofile }}">{{ video.name }}</option>-->
-<!--      {% endfor %}-->
-<!--      {% else %}-->
-<!--      <option>No uploads yet</option>-->
-<!--      {% endif %}-->
-<!--    </select>-->
-<!--  </div>-->
     <form method="POST" enctype="multipart/form-data">
       {% csrf_token %}
+      <label for="ch">Name: &nbsp;</label>
       <select name="ch" id="ch">
 
         {% for i in list_videos %}
@@ -82,12 +62,5 @@
 <br><br>
       {% endif %}
 </div></center>
-
-
-
-<!--  <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>-->
-<!--  <a href="#" class="list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true">Vestibulum at eros</a>-->
-
-<!--<img src="{% static 'images/geye.jpg' %}" alt="uh, oh">-->
 </body>
 </html>
