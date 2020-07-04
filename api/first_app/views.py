@@ -7,7 +7,9 @@ from .models import Video,Video_info
 from django.views.generic import TemplateView
 from .forms import VideoForm, vpreview, vgen
 from django.conf import settings
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseRedirect
+
+
 # Create your views here.
 
 
@@ -38,6 +40,33 @@ def VList(request):
                    }
 
     return render(request,"first_app/preview.html",context)
+
+def DeleteVid(request):
+
+    name=request.GET.get('name')
+    fps=request.GET.get('fps')
+    Video_info.objects.filter(name=name).delete()
+    vname=name.split('.')[0]+'_Output_'+str(fps)
+    vname1=name.split('.')[0]+'-frame_'+str(fps)
+    os.remove('C:/Users/Bipin Gowda/PycharmProjects/GodsEye/output/'+vname+'.mp4')
+
+    os.remove('C:/Users/Bipin Gowda/PycharmProjects/GodsEye/api/media/output/'+vname+'.mp4')
+    for file in os.listdir('C:/Users/Bipin Gowda/PycharmProjects/GodsEye/output/'):
+        if file.startswith(vname1):
+            os.remove('C:/Users/Bipin Gowda/PycharmProjects/GodsEye/output/'+file)
+    for file in os.listdir('C:/Users/Bipin Gowda/PycharmProjects/GodsEye/api/media/output_frames/'):
+        if file.startswith(vname1):
+            os.remove('C:/Users/Bipin Gowda/PycharmProjects/GodsEye/api/media/output_frames/'+file)
+    ret=HttpResponseRedirect('/first_app/generate_output/')
+    return ret
+
+def DeleteMedia(request):
+    name=request.GET.get('name')
+    n='videos/'+name.split('/')[-1]
+    Video.objects.filter(videofile=n).delete()
+    os.remove('C:/Users/Bipin Gowda/PycharmProjects/GodsEye/api/media/'+n)
+    ret=HttpResponseRedirect('/first_app/preview_video/')
+    return ret
 
 def PhotoGrid(request):
     context = {}
@@ -70,8 +99,10 @@ def Vout(request):
     if request.POST:
         form1 = vgen(request.POST)
         if form1.is_valid():
-            name=request.POST.get('name')
+            #print(request.POST)
+            name = request.POST.get('name')
             f = form1.cleaned_data['fps']
+            env = request.POST.get('env')
             temp = Video.objects.filter(name=name)
             for v in temp:
                 pv = str(v.videofile)
@@ -89,10 +120,11 @@ def Vout(request):
                        'name': ffname + '-frame_' + str(f),
                        'form': form1,
                        'is_output_generated': 'true',
+                        'list_videos': list_videos,
                        }
             if (os.path.exists(pathh)==False):
                 start=time.time()
-                ifp,nop=alpha(file_name,f)
+                ifp,nop=alpha(file_name,f,env)
                 end = time.time()
                 t=end-start
                 #temp_path='C:/Users/Bipin Gowda/PycharmProjects/GodsEye/api/media/output_frames/'+ffname + '-frame_' + str(f)+'_1.jpg'

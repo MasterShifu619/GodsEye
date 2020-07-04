@@ -10,12 +10,15 @@ p = subprocess.call('cd .. ', shell=True)
 protoFile = "C:/Users/Bipin Gowda/PycharmProjects/GodsEye/multipose_model/pose_deploy_linevec.prototxt"
 weightsFile = "C:/Users/Bipin Gowda/PycharmProjects/GodsEye/multipose_model/pose_iter_440000.caffemodel"
 net = cv2.dnn.readNetFromCaffe(protoFile, weightsFile)
-
+environment={
+    'ATM':'model_jairaj_home',
+    'Sports':'sports',
+}
 #Apply yolo to the selected frames
-def apply_yolo(fname,frame,count,total_count):
+def apply_yolo(fname,frame,count,total_count,env):
     from multipose_test import apply_pose_estimate
     start1=time.time()
-    count,tt=apply_pose_estimate(frame, net, fname, count)
+    count,tt=apply_pose_estimate(frame, net, fname, count, environment[env])
     total_count=total_count+tt
     end1=time.time()
     print('Time taken:',(end1-start1))
@@ -30,7 +33,7 @@ def update_frames(lb,ub,ffps):
     selected_frames.sort()
     return selected_frames
 
-def alpha(name,f):
+def alpha(name,f,env):
     count=0
     total_count=0
     # Opens the Video file
@@ -45,6 +48,7 @@ def alpha(name,f):
     else:
         fps = int(cap.get(cv2.CAP_PROP_FPS))
         print("Frames per second using video.get(cv2.CAP_PROP_FPS) : {0}".format(fps))
+    frame_count = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
     i = 0
     j = 0
     final_fps = f
@@ -69,14 +73,18 @@ def alpha(name,f):
             block += 1
         ret, frame = cap.read()
         if ret == False:
-            break
+            if i < frame_count:
+                print("Broken frame identified and ignored")
+                continue
+            else:
+                break
 
         if i in selected_frames:
             fname = v + '-frame_'+str(f)+'_'+ str(n) + '.jpg'
             #cv2.imwrite('extracted_frames/' + fname, frame)
             j += 1
             n += 1
-            count,total_count=apply_yolo(fname, frame,count,total_count)
+            count,total_count=apply_yolo(fname, frame,count,total_count,env)
             print(j, selected_frames)
         i += 1
 

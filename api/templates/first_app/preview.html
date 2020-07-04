@@ -49,18 +49,29 @@
         {% endfor %}
       </select><br><br>
       <input class="btn btn-secondary" type="submit" value="Preview"/>
+
     </form>
   <br><br>
   </center>
-  <center>
+  <br><hr><br><br>
+  <div class="row">
+    <div class="col-md-6">
+      <center>
     {% if videofile %}
-    <div id="disp_video">
+    <div id="disp_video" style="padding-left:430px">
     <video width='400' controls>
         <source src='{{ videofile }}' type='video/mp4'>
         Your browser does not support the video tag.
     </video>
-<br><br>
-      {% endif %}
+
 </div></center>
+    </div>
+    <div class="col-md-6">
+      <br><br><br><br>
+      <p style="text-align: center"><a href="/first_app/delete_media/?name={{ videofile }}"><img src="{% static 'images/trash1.png' %}" style="width:45px;height:50px" alt="bin"/></a></p>
+    </div>
+  </div>
+{% endif %}
+  <br><br>
 </body>
 </html>

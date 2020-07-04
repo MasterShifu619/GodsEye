@@ -19,7 +19,7 @@ def apply_yolo(fname,frame,writer):
     print('Time taken:',(end-start))
 
 # Opens the Video file
-video_name='NV_42.mp4'
+video_name='JP_NV1.mp4'
 cap = cv2.VideoCapture('videos/'+video_name)
 
 #Find FPS
@@ -35,7 +35,7 @@ frame_count = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
 print(frame_count)
 i=0
 j=0
-final_fps=4
+final_fps=5
 block=1
 selected_frames=[]
 while (len(selected_frames)<final_fps):

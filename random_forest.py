@@ -5,7 +5,7 @@ from sklearn.metrics import classification_report, confusion_matrix
 from sklearn.tree import DecisionTreeClassifier, plot_tree
 import matplotlib.pyplot as plt
 import numpy as np
-dataset = 'trained_vectors.csv'
+dataset = 'sports.csv'
 
 data = pd.read_csv(dataset)
 print (data.head())
@@ -31,7 +31,7 @@ from sklearn.ensemble import RandomForestClassifier
 # #Create a Gaussian Classifier
 clf=RandomForestClassifier(n_estimators=100)
 clf.fit(X, y)
-filename="rfc_model.sav"
+filename="sports.sav"
 pickle.dump(clf, open(filename, 'wb'))
 # #Train the model using the training sets
 # y_pred=clf.predict(X_test)

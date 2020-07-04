@@ -1,9 +1,11 @@
 import pickle
 import pandas as pd
-file='C:/Users/Bipin Gowda/PycharmProjects/GodsEye/rfc_model.sav'
-loaded_model = pickle.load(open(file, 'rb'))
+#file='C:/Users/Bipin Gowda/PycharmProjects/GodsEye/model_jairaj_home.sav'
+#loaded_model = pickle.load(open(file, 'rb'))
 
-def classify(distance_vector):
+def classify(distance_vector,env):
+    file = 'C:/Users/Bipin Gowda/PycharmProjects/GodsEye/'+env+'.sav'
+    loaded_model = pickle.load(open(file, 'rb'))
     l=[]
     for key, value in distance_vector.items():
         l.append(value)

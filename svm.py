@@ -1,7 +1,7 @@
 import pickle
 import pandas as pd
 
-dataset = 'trained_vectors.csv'
+dataset = 'model_jairaj_home.csv'
 
 data = pd.read_csv(dataset)
 print (data.head())
@@ -18,7 +18,7 @@ from sklearn import svm
 
 clf=svm.SVC()
 clf.fit(X, y)
-filename="svm_model.sav"
+filename="model_jairaj_home.sav"
 pickle.dump(clf, open(filename, 'wb'))
 
 

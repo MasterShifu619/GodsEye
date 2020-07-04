@@ -161,7 +161,7 @@ def getPersonwiseKeypoints(valid_pairs, invalid_pairs, keypoints_list):
     return personwiseKeypoints,len(deletePerson)
 
 
-def apply_pose_estimate(image1, net, fname, count):
+def apply_pose_estimate(image1, net, fname, count, env):
     count=count+1
     flag=0
     # image1 = cv2.imread("Dataset_sample/non-violent poses/slapping-2 (4).jpg")
@@ -208,7 +208,7 @@ def apply_pose_estimate(image1, net, fname, count):
     from img_classification import img_classify
     if no_of_deleted>=1 and len(personwiseKeypoints)-no_of_deleted<3:
         cv2.imwrite('C:/Users/Bipin Gowda/PycharmProjects/GodsEye/output/' + fname, frameClone)
-        img_classify(frameClone,fname)
+        img_classify(frameClone,fname,env)
     else:
         import math
         for i in range(len(personwiseKeypoints)):
@@ -261,7 +261,7 @@ def apply_pose_estimate(image1, net, fname, count):
                     distance = round(math.sqrt(((x1 - x2) ** 2) + ((y1 - y2) ** 2)), 2)
                     distance_vector[t] = distance
             from classification import classify
-            c = classify(distance_vector)
+            c = classify(distance_vector,env)
             if c == 'red':
                 flag = 1
             for i in range(17):

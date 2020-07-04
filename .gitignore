@@ -1,2 +1,7 @@
 multipose_model
 venv
+output
+frames
+videos
+_pycache_
+.idea
