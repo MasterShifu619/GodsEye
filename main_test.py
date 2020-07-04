@@ -94,4 +94,8 @@ def alpha(name,f,env):
     sys.path.insert(0, 'C:/Users/Bipin Gowda/PycharmProjects/GodsEye/output')
     from output.generate_video import generate
     generate(v,f)
+    output_filename=v+'-frame_'+str(f)
+    for file in os.listdir('C:/Users/Bipin Gowda/PycharmProjects/GodsEye/output/'):
+        if file.startswith(output_filename):
+            os.remove('C:/Users/Bipin Gowda/PycharmProjects/GodsEye/output/'+file)
     return fps,int(round(total_count/count))
